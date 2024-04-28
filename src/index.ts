@@ -8,9 +8,11 @@ console.log(`${myVar} = ${typeof myVar}`);
 myVar = true;
 console.log(`${myVar} = ${typeof myVar}`);
 
-function calculateTax(amount) {
+function calculateTax(amount:number):number {
     return amount * 1.2;
 }
-console.log(`${12} = ${calculateTax(12)}`);
-console.log(`${"Hello"} = ${calculateTax("Hello")}`);
-console.log(`${true} = ${calculateTax(true)}`);
+let price: number = 100;
+let taxAmount:number = calculateTax(price);
+let halfShare:number = taxAmount/2;
+console.log(`Full amount in tax: ${taxAmount}`);
+console.log(`Half amount in tax: ${halfShare}`);
