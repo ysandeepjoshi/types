@@ -24,3 +24,6 @@ switch (typeof taxValue) {
         console.log(`Unknown type: ${value}`);
         break;
 }
+let newResult = calculateTax(200, false);
+let myNumber = newResult;
+console.log(`Number value: ${myNumber.toFixed(2)}`);
